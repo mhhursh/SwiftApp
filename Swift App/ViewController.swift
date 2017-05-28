@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     @IBAction func pushMePressed(_ sender: Any) {
         self.view.backgroundColor = UIColor.darkGray
         theLabel.text = "Buttons are cool"
-        counter += 10
+        counter += 1
         print(counter)
-        countTapsLabel.text = "Counter = \(counter)"
+        countTapsLabel.text = "Counter Text = \(counter)"
         
     }
     @IBAction func updateButton(_ sender: Any) {
