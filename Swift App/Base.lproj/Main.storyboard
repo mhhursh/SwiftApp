@@ -47,6 +47,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zV2-H3-4f6">
+                                <rect key="frame" x="137.5" y="282" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="mDa-MO-S4V"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lQk-PI-0eS">
+                                <rect key="frame" x="137.5" y="326" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="9A6-kK-vZk"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -54,15 +72,21 @@
                             <constraint firstItem="PQv-Kb-kDq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E8j-DI-BPf"/>
                             <constraint firstItem="rzo-rX-Z9B" firstAttribute="top" secondItem="sui-9U-2T1" secondAttribute="bottom" constant="40" id="HUT-Lr-Xdh"/>
                             <constraint firstItem="4R9-wC-cvw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HnJ-5Q-8s8"/>
+                            <constraint firstItem="lQk-PI-0eS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RY7-Ua-5ba"/>
                             <constraint firstItem="sui-9U-2T1" firstAttribute="top" secondItem="PQv-Kb-kDq" secondAttribute="bottom" constant="30" id="TWr-RF-SDu"/>
                             <constraint firstItem="PQv-Kb-kDq" firstAttribute="top" secondItem="4R9-wC-cvw" secondAttribute="bottom" constant="50" id="ZkV-T1-cTA"/>
                             <constraint firstItem="4R9-wC-cvw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="eld-pu-IQp"/>
+                            <constraint firstItem="zV2-H3-4f6" firstAttribute="top" secondItem="rzo-rX-Z9B" secondAttribute="bottom" constant="20.5" id="nnr-rH-2ZY"/>
+                            <constraint firstItem="zV2-H3-4f6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rTV-wb-ZBB"/>
                             <constraint firstItem="rzo-rX-Z9B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xdU-Kz-Gbt"/>
+                            <constraint firstItem="lQk-PI-0eS" firstAttribute="top" secondItem="zV2-H3-4f6" secondAttribute="bottom" constant="14" id="zSp-yE-i64"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="buttonLabel" destination="sui-9U-2T1" id="g8U-WK-6Uh"/>
                         <outlet property="countTapsLabel" destination="rzo-rX-Z9B" id="w8j-3O-NNk"/>
+                        <outlet property="text1" destination="zV2-H3-4f6" id="8iu-Ti-xm2"/>
+                        <outlet property="text2" destination="lQk-PI-0eS" id="bOP-1P-E4S"/>
                         <outlet property="theLabel" destination="4R9-wC-cvw" id="alk-xB-Oc9"/>
                     </connections>
                 </viewController>

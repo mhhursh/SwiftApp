@@ -16,13 +16,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var countTapsLabel: UILabel!
     @IBOutlet weak var theLabel: UILabel!
     @IBOutlet weak var buttonLabel: UIButton!
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
     @IBAction func pushMePressed(_ sender: Any) {
-        self.view.backgroundColor = UIColor.darkGray
-        theLabel.text = "Buttons are cool"
-        counter += 1
-        print(counter)
-        countTapsLabel.text = "Counter Text = \(counter)"
-        
+        print(text1.text!)
+        print(text2.text!)
     }
     @IBAction func updateButton(_ sender: Any) {
         
